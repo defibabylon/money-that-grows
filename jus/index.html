@@ -10,26 +10,42 @@
 <style>
 :root{--cream:#f3ecdf;--cream2:#ece1cd;--paper:#fbf7ee;--ink:#2c2218;--muted:#8a7c64;--green:#5f7d54;--plum:#6d5a7e;--gold:#b9902c;--hair:rgba(44,34,24,.14);--orange:#e8633a;}
 *{box-sizing:border-box}
-body{margin:0;background:radial-gradient(120% 70% at 50% 0%,var(--paper) 0%,var(--cream) 55%);color:var(--ink);font-family:'Inter',-apple-system,Segoe UI,sans-serif;line-height:1.62;font-size:17px;}
-.wrap{max-width:740px;margin:0 auto;padding:54px 26px 90px;}
+body{margin:0;background:radial-gradient(120% 60% at 50% 0%,var(--paper) 0%,var(--cream) 55%);color:var(--ink);font-family:'Inter',-apple-system,Segoe UI,sans-serif;line-height:1.62;font-size:17px;}
+.wrap{max-width:760px;margin:0 auto;padding:54px 26px 90px;}
 .kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--plum);font-weight:600;margin-bottom:18px;text-align:center;}
-.logo{display:block;width:128px;margin:0 auto 8px;}
+.logo{display:block;width:120px;margin:0 auto 8px;}
 h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:42px;line-height:1.1;letter-spacing:-.01em;text-align:center;margin:.2em 0 .3em;}
-.lede{font-size:19px;color:#4a4030;text-align:center;max-width:620px;margin:0 auto 8px;}
+.lede{font-size:19px;color:#4a4030;text-align:center;max-width:640px;margin:0 auto 8px;}
 .lede em{color:var(--muted);font-style:italic;}
-h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:27px;margin:1.7em 0 .5em;}
+h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:28px;margin:1.9em 0 .5em;}
 p{margin:.7em 0;}
 strong{color:var(--ink);}
-ul{padding-left:1.25em;}li{margin:.35em 0;}
+ul{padding-left:1.2em;}li{margin:.4em 0;}
 hr{border:none;border-top:1px solid var(--hair);margin:2.4em 0;}
-.hero{display:block;width:100%;max-width:460px;margin:26px auto 6px;}
 .cap{font-size:13px;color:var(--muted);text-align:center;margin-top:0;}
-.ills{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin:22px 0 6px;}
-.ills img{width:96px;height:96px;object-fit:contain;}
-.flags{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:14px 0;}
-.flags img{width:42px;height:auto;border-radius:3px;box-shadow:0 2px 6px rgba(44,34,24,.18);}
+.flags{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;margin:16px 0;}
+.flags img{width:38px;height:auto;border-radius:3px;box-shadow:0 2px 6px rgba(44,34,24,.18);}
 .status{background:rgba(155,59,47,.06);border-left:3px solid var(--orange);border-radius:0 10px 10px 0;padding:4px 22px;margin:1.4em 0;}
-.foot{text-align:center;color:var(--muted);font-size:14px;margin-top:2.4em;}
+.foot{text-align:center;color:var(--muted);font-size:14px;margin-top:2.6em;}
+/* case study */
+.case{background:var(--paper);border:1px solid var(--hair);border-radius:16px;padding:24px 26px;margin:1.2em 0;box-shadow:0 10px 30px rgba(44,34,24,.06);}
+.case h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;margin:.2em 0 .5em;}
+.bignum{display:flex;gap:26px;flex-wrap:wrap;margin:18px 0 6px;}
+.bignum div{flex:1;min-width:150px;}
+.bignum .n{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:30px;color:var(--green);line-height:1;}
+.bignum .l{font-size:13px;color:var(--muted);margin-top:6px;}
+/* stat grid */
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:14px 0;}
+.stat{background:var(--paper);border:1px solid var(--hair);border-radius:12px;padding:14px 16px;}
+.stat .n{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:22px;}
+.stat .l{font-size:12.5px;color:var(--muted);margin-top:4px;line-height:1.35;}
+/* flow */
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0;font-size:14px;}
+.flow span{background:var(--cream2);border:1px solid var(--hair);border-radius:999px;padding:7px 13px;white-space:nowrap;}
+.flow b{color:var(--green);}
+.arw{color:var(--muted);}
+.modelled{font-size:12.5px;color:var(--muted);font-style:italic;}
+@media(max-width:560px){.stats{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -37,48 +53,61 @@ hr{border:none;border-top:1px solid var(--hair);margin:2.4em 0;}
   <div class="kicker">Tashoma Vilini · prior art</div>
   <img class="logo" src="assets/jus-logo.png" alt="JUS logo">
   <h1>JUS — Senegal, 2023</h1>
-  <p class="lede">A stablecoin savings app I designed for the African unbanked. <em>It never launched.</em> I am sharing it because it is, in substance, the same problem Perena is now solving, and because it is why the emerging-market savings mission is not abstract to me.</p>
+  <p class="lede">A stablecoin savings app I designed for the African unbanked. <em>It never launched.</em> I am sharing the actual product and business thinking, not just the brand, because it is the same problem Perena is now solving, and it is why the emerging-market savings mission is not abstract to me.</p>
 
-  <img class="hero" src="assets/jus-hero.png" alt="JUS concept: turning deposits into yield">
-  <p class="cap">JUS brand and concept work, 2023.</p>
-
-  <h2>What it was</h2>
-  <p>In 2023, while living in Senegal, I founded JUS and led it as CEO with a small team. It was a mobile-first stablecoin savings app for the unbanked, especially women across Senegal and the wider WAEMU region.</p>
-  <p>The idea was simple on the surface and hard underneath: <strong>two-click yield on mobile money.</strong> Deposit through the mobile-money rails people already use (Wave, Orange), convert to a stablecoin, earn real DeFi yield, and withdraw straight back to mobile money.</p>
-  <div class="ills">
-    <img src="assets/ill-phone.png" alt="mobile-first">
-    <img src="assets/ill-piggy.png" alt="savings">
-    <img src="assets/ill-graph.png" alt="yield">
-    <img src="assets/ill-lock.png" alt="self-custody">
+  <h2>The user I built it for: Fatou</h2>
+  <p>Fatou is a single mother and street vendor in Senegal. No bank account, no way to save that keeps up with a currency losing value. JUS was designed around her: deposit through the mobile money she already uses, hold a dollar stablecoin that earns yield, withdraw any time. I modelled her case in detail.</p>
+  <div class="case">
+    <h3>Fatou saves about $25 a week, for five years</h3>
+    <div class="bignum">
+      <div><div class="n">$6,852</div><div class="l">withdrawn after fees with JUS</div></div>
+      <div><div class="n">$5,779</div><div class="l">the same deposits without it</div></div>
+      <div><div class="n">+19.8%</div><div class="l">extra, about $1,073, over 5 years</div></div>
+    </div>
+    <p class="modelled">Modelled from a simulation, JUS never launched, so these are designed projections, not results. The real point: holding a dollar stablecoin (instead of the devaluing CFA franc) plus on-chain yield beats both a 4% local savings rate and doing nothing, and it builds her an on-chain financial history she can borrow against.</p>
   </div>
-  <ul>
-    <li><strong>Protect savings from local-currency inflation.</strong> Holding a dollar stablecoin instead of a devaluing XOF was the core value.</li>
-    <li><strong>Give people with no bank access a way to save and grow money</strong>, not just move it.</li>
-    <li><strong>Built for trust and simplicity:</strong> plain-language education, localised support, street teams to onboard people face to face, and an on-chain financial history so users could begin to build credit.</li>
-  </ul>
-  <p class="cap">Target markets across the WAEMU region:</p>
+
+  <h2>The opportunity</h2>
+  <div class="stats">
+    <div class="stat"><div class="n">11%</div><div class="l">of Sub-Saharan Africa's GDP runs on mobile money</div></div>
+    <div class="stat"><div class="n">$701B</div><div class="l">mobile-money transaction volume (2021); ~$239B in West Africa</div></div>
+    <div class="stat"><div class="n">56%</div><div class="l">of mobile-money users in the region are women</div></div>
+  </div>
+  <p>JUS targeted women aged 18 to 45 with mobile-money accounts across the WAEMU region, a market of roughly 32 million people who already move money on their phones but have no way to save in a stable, appreciating asset.</p>
   <div class="flags">
-    <img src="assets/flag-benin.png" alt="Benin">
-    <img src="assets/flag-burkinafaso.png" alt="Burkina Faso">
-    <img src="assets/flag-ivorycoast.png" alt="Ivory Coast">
-    <img src="assets/flag-mali.png" alt="Mali">
-    <img src="assets/flag-niger.png" alt="Niger">
-    <img src="assets/flag-guineabissau.png" alt="Guinea-Bissau">
+    <img src="assets/flag-benin.png" alt="Benin"><img src="assets/flag-burkinafaso.png" alt="Burkina Faso"><img src="assets/flag-ivorycoast.png" alt="Ivory Coast"><img src="assets/flag-mali.png" alt="Mali"><img src="assets/flag-niger.png" alt="Niger"><img src="assets/flag-guineabissau.png" alt="Guinea-Bissau">
   </div>
+
+  <h2>How it worked, and how it made money</h2>
+  <p>The user experience was two clicks. Underneath, money moved through real rails and the unit economics were deliberately simple:</p>
+  <div class="flow">
+    <span>Mobile money in (Wave/Orange)</span><span class="arw">→</span>
+    <span>fiat → <b>stablecoin</b></span><span class="arw">→</span>
+    <span><b>+ DeFi yield</b></span><span class="arw">→</span>
+    <span>withdraw to mobile money</span>
+  </div>
+  <p>Revenue came from a 15% commission on yield earned (plus small partner fees on conversion). On a modelled 100,000 users in year one at roughly $1,000 average balance and ~6% yield, that is about <strong>$700k in year-one revenue</strong>, scaling with the user base. A real business model, not a grant-funded experiment.</p>
+
+  <h2>How I planned to reach her</h2>
+  <p>The hardest part of this market is not the product, it is trust and distribution with people new to crypto. The plan met them where they already were:</p>
+  <ul>
+    <li><strong>Street teams</strong> onboarding face to face in high-traffic areas, the single most important channel for trust.</li>
+    <li><strong>Mobile-network and fintech partnerships</strong> (Wave, Orange) to ride existing rails and reach.</li>
+    <li><strong>Localised, plain-language education</strong> and 24/7 in-language support, plus referral and influencer campaigns.</li>
+  </ul>
 
   <h2>The honest status</h2>
   <div class="status">
-  <p>I took JUS to pitch-ready: demo wireframes, a deck, a business plan, a financial model, and a full go-to-market. I pitched investors and partners.</p>
-  <p><strong>It never found traction and it never launched.</strong> No live product, no users. I am not presenting it as a success. I am presenting it as real, considered work on a problem I care about.</p>
+  <p>I took JUS to pitch-ready: demo wireframes, deck, business plan, financial model and full go-to-market. I pitched investors and partners.</p>
+  <p><strong>It never found traction and it never launched.</strong> No live product, no users. I am presenting it as real, considered work on a problem I care about, not a success.</p>
   </div>
 
   <h2>What it taught me (the part that matters for Perena)</h2>
-  <p>The hard part was never the product or the yield. It was <strong>trust and distribution with non-crypto users.</strong> Getting a person with no banking history to put real money into something they do not yet understand is the whole game, and it is far harder than any smart contract.</p>
-  <p>That is precisely the problem <strong>Perena is now better placed to solve</strong>: a real product with real, diversified yield, a brand built for approachability, and the fiat and wallet rails finally maturing. The thing I could not get off the ground in 2023 is closer to possible now, with the pieces Perena has.</p>
-  <p>It is also why, when Anna talks about serving savers in emerging markets who have no local alternative, it is not a thesis to me. I have sat with that user.</p>
+  <p>The hard part was never the product or the yield. It was <strong>trust and distribution with non-crypto users.</strong> Getting a person with no banking history to put real money into something they did not yet understand is the whole game.</p>
+  <p>That is exactly the problem <strong>Perena is now better placed to solve</strong>, with a real product, diversified yield, a brand built for approachability, and the fiat and wallet rails finally maturing. It is also why, when Anna talks about savers in emerging markets who have no local alternative, it is not a thesis to me. I designed the whole business around that user.</p>
 
   <hr>
-  <p class="foot">Shared as context, not a credential. The company did not make it. The lessons did.</p>
+  <p class="foot">Shared as context, not a credential. The company did not make it. The thinking, and the lessons, did.</p>
 </div>
 </body>
 </html>

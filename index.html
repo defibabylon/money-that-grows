@@ -1,4 +1,4 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='robots' content='noindex'><meta name='viewport' content='width=device-width,initial-scale=1'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap' rel='stylesheet'><style>
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='robots' content='noindex'><meta name='viewport' content='width=device-width,initial-scale=1'><meta property='og:type' content='website'><meta property='og:url' content='https://defibabylon.github.io/money-that-grows/'><meta property='og:title' content='A few things I made for Perena'><meta property='og:description' content='A growth thesis for USD*, shown rather than told. By Tashoma Vilini.'><meta property='og:image' content='https://defibabylon.github.io/money-that-grows/assets/og.png'><meta property='og:image:width' content='1200'><meta property='og:image:height' content='630'><meta name='twitter:card' content='summary_large_image'><meta name='twitter:title' content='A few things I made for Perena'><meta name='twitter:description' content='A growth thesis for USD*, shown rather than told.'><meta name='twitter:image' content='https://defibabylon.github.io/money-that-grows/assets/og.png'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap' rel='stylesheet'><style>
 :root{--cream:#f3ecdf;--cream2:#ece1cd;--paper:#fbf7ee;--ink:#2c2218;--muted:#8a7c64;--green:#5f7d54;--plum:#6d5a7e;--gold:#b9902c;--hair:rgba(44,34,24,.14);}
 *{box-sizing:border-box}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:'Inter',-apple-system,Segoe UI,sans-serif;line-height:1.6;font-size:17px;}
@@ -27,19 +27,40 @@ li{margin:.25em 0;}
 .chips a:hover{border-color:var(--plum);color:var(--plum);}
 section{padding:54px 0;border-bottom:1px solid var(--hair);}
 section:nth-child(even){background:rgba(236,225,205,.4);}
-.reel{text-align:center;margin:0 0 24px;}
-.reelhero{padding:34px 0 14px;text-align:center;border-bottom:1px solid var(--hair);}
-.reelhero video{width:100%;max-width:330px;border-radius:20px;box-shadow:0 22px 60px rgba(44,34,24,.25);display:block;margin:0 auto;background:var(--cream2);}
-.cap{font-size:13px;color:var(--muted);margin-top:10px;}
-footer{padding:40px 0 70px;text-align:center;color:var(--muted);font-size:14px;}
-</style><title>Perena drop, Tashoma Vilini</title></head><body>
+.reelhero{padding:34px 0 16px;text-align:center;border-bottom:1px solid var(--hair);}
+.reelbox{position:relative;width:100%;max-width:300px;margin:0 auto;aspect-ratio:9/16;border-radius:20px;overflow:hidden;box-shadow:0 22px 60px rgba(44,34,24,.25);background:var(--cream2);}
+.reelbox video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;cursor:pointer;}
+.soundbtn{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);background:rgba(44,34,24,.82);color:#fff;border:none;border-radius:999px;padding:9px 17px;font:500 14px Inter,sans-serif;cursor:pointer;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);}
+.soundbtn:hover{background:rgba(44,34,24,.95);}
+.cap{font-size:13px;color:var(--muted);margin-top:12px;}
+.sectitle{margin-top:0;}
+.tldr{font-size:19px;line-height:1.5;color:#3a3025;background:rgba(109,90,126,.06);border-left:3px solid var(--plum);padding:14px 18px;border-radius:0 10px 10px 0;margin:8px 0 20px;}
+details.more{margin-top:8px;}
+details.more>summary{cursor:pointer;color:var(--plum);font-weight:600;font-size:15px;list-style:none;padding:10px 0;display:inline-block;}
+details.more>summary::-webkit-details-marker{display:none;}
+details.more>summary::after{content:' ↓';}
+details.more[open]>summary::after{content:' ↑';}
+.deep{padding-top:6px;}
+.deep h1:first-child{display:none;}
+.segvis{margin:14px 0 8px;}
+.segvis-head{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;}
+.segvis-head span{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:5px;}
+.segvis-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
+.segcard{background:var(--paper);border:1px solid var(--hair);border-radius:14px;padding:16px 18px;}
+.segcard-tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--plum);font-weight:600;}
+.segcard-title{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:18px;margin:5px 0 10px;line-height:1.15;}
+.segcard ul{margin:0;padding-left:1.1em;}
+.segcard li{margin:.3em 0;font-size:14.5px;}
+@media(max-width:560px){.segvis-cols{grid-template-columns:1fr;}}
+footer{padding:46px 0 70px;text-align:center;color:var(--muted);font-size:14px;}
+</style><title>A few things I made for Perena, Tashoma Vilini</title></head><body>
 <header class='hero'><div class='wrap'>
 <div class='kicker'>For Perena, from Tashoma Vilini</div>
 <h1>A few things I made after our call.</h1>
 <p class='lede'>I went deep on what Perena is building, an on-chain asset manager turning yield into something people actually keep. Then I could not help making a few things. None of this is a finished plan. It is how I think, shown rather than told.</p>
 <nav class='chips'><a href='#growth'>Growth POV + Roots</a><a href='#purple'>Perena Purple (sample)</a></nav>
 </div></header>
-<section id='reel-video' class='reelhero'><div class='wrap'><video controls playsinline preload='metadata' poster='assets/poster.png' src='assets/usdstar.mp4'></video><p class='cap'>USD* explainer, ~35s. Built in Remotion, voiced, original score.</p></div></section><section id='growth'><div class='wrap'><h1>Turning yield into loyalty</h1>
+<section id='reel-video' class='reelhero'><div class='wrap'><div class='reelbox'><video id='reel' autoplay muted loop playsinline preload='auto' poster='assets/poster.png' src='assets/usdstar.mp4'></video><button id='sound' class='soundbtn' type='button'>Tap for sound</button></div><p class='cap'>USD* explainer · 37s · built in Remotion, voiced, original score</p></div></section><section id='growth'><div class='wrap'><h2 class='sectitle'>Growth POV + Roots</h2><p class='tldr'>Two segments, opposite playbooks: crypto-native yield-holders (about 77% male, on X and YouTube) and emerging-market savers (roughly 50/50, on WhatsApp). Win the first cheaply, use it to earn the second. Plus Roots, a loyalty layer that rewards capital for staying, not arriving.</p><div class='segvis'><div class='segvis-head'>Same word, two audiences. Opposite playbooks.<span>Sourced: SparkToro + YouGov, 4 markets</span></div><div class='segvis-cols'><div class='segcard'><div class='segcard-tag'>Segment 1 · win now</div><div class='segcard-title'>Crypto-native yield-holders</div><ul><li><b>~77% male</b>, 26 to 35</li><li>Lives on <b>X + YouTube</b></li><li>Already on-chain, idle USDC/USDT</li><li>Heavy <b>Claude / ChatGPT</b> users</li></ul></div><div class='segcard'><div class='segcard-tag'>Segment 2 · the wedge</div><div class='segcard-title'>Emerging-market savers</div><ul><li><b>~50/50</b> gender</li><li>Lives on <b>WhatsApp + Messenger</b></li><li>Holds idle USDT vs inflation</li><li>Won by <b>trust + education</b></li></ul></div></div></div><details class='more'><summary>Read the full thinking</summary><div class='deep'><h1>Turning yield into loyalty</h1>
 <h3>A short POV on Perena's growth problem, and one idea I couldn't stop thinking about</h3>
 <p><em>Tashoma Vilini, ahead of the Marketing Lead conversation. Written quickly and informally, so treat it as a sketch, not a finished plan.</em></p>
 <hr />
@@ -89,7 +110,7 @@ footer{padding:40px 0 70px;text-align:center;color:var(--muted);font-size:14px;}
 <p><strong>Why it suits Perena specifically.</strong> It is on-brand rather than bolted on, it is built to grow the thousand who love you rather than the ten thousand who pass through, and it is a different model from the airdrop race that Anna has said she is tired of. It is also legible to a non-crypto saver, which matters if the consumer and emerging-market direction is real, because "the longer you save, the more you earn, and the more you unlock" is a sentence anyone's mother understands.</p>
 <p>It is not a finished mechanism. Sustainability of the reward budget, the exact curve of the tenure multiplier, and the soft-versus-hard treatment of withdrawals all need real modelling. But the shape feels right, and it is the kind of thing I would want to build with you in the first ninety days.</p>
 <hr />
-<p>I wrote this because I couldn't stop thinking about the problem after going deep on what you are building. Happy to be wrong on any of it. That's half the fun.</p></div></section><section id='purple'><div class='wrap'><h1>Perena Purple, Issue 00 (sample)</h1>
+<p>I wrote this because I couldn't stop thinking about the problem after going deep on what you are building. Happy to be wrong on any of it. That's half the fun.</p></div></details></div></section><section id='purple'><div class='wrap'><h2 class='sectitle'>Perena Purple (sample)</h2><p class='tldr'>What a Perena member update could read like: one yield source, in plain English, with the honest risk. Trust as the product.</p><details class='more'><summary>Read the sample issue</summary><div class='deep'><h1>Perena Purple, Issue 00 (sample)</h1>
 <h3>Written as a demonstration, not an official issue. This is what I would want the member update to feel like.</h3>
 <p><em>A weekly note for people who keep their savings in USD*. Plain language, no jargon you didn't ask for, and the truth about where your yield comes from.</em></p>
 <hr />
@@ -106,4 +127,4 @@ footer{padding:40px 0 70px;text-align:center;color:var(--muted);font-size:14px;}
 <p>We will never put a number in front of you that we cannot explain to you. If a yield source ever stops making sense to us, it comes out of the portfolio before it reaches your balance. Your trust is the only thing here that does not compound automatically, so we treat it as the asset it is.</p>
 <p>See you next week.</p>
 <hr />
-<p><em>Note from Tashoma: I wrote this to show the voice and the standard I would hold the Purple update to. The pattern scales: one yield source per issue, one honest risk, one plain analogy. Over a few months this becomes the most trusted reading in a saver's inbox, which is the cheapest retention you can buy.</em></p></div></section><section id='downloads'><div class='wrap'><h2>Take it with you</h2><p>Same three pieces as PDFs.</p><div class='chips'><a href='pdf/B_Growth_POV_and_Roots.pdf'>Growth POV + Roots (PDF)</a><a href='pdf/C_Perena_Purple_sample_issue.pdf'>Perena Purple (sample) (PDF)</a></div></div></section><footer><div class='wrap'>Made because the problem was fun to think about. Happy to be wrong on any of it.</div></footer></body></html>
+<p><em>Note from Tashoma: I wrote this to show the voice and the standard I would hold the Purple update to. The pattern scales: one yield source per issue, one honest risk, one plain analogy. Over a few months this becomes the most trusted reading in a saver's inbox, which is the cheapest retention you can buy.</em></p></div></details></div></section><section id='downloads'><div class='wrap'><h2>Take it with you</h2><p>Both pieces as PDFs.</p><div class='chips'><a href='pdf/B_Growth_POV_and_Roots.pdf'>Growth POV + Roots (PDF)</a><a href='pdf/C_Perena_Purple_sample_issue.pdf'>Perena Purple (sample) (PDF)</a></div></div></section><footer><div class='wrap'>Made because I couldn't stop thinking about the problem. Happy to be wrong on any of it. Either way, good luck with what you're building.</div></footer><script>(function(){var v=document.getElementById('reel'),b=document.getElementById('sound');if(!v||!b)return;function on(){v.muted=false;v.currentTime=0;v.loop=false;v.controls=true;v.play();b.style.display='none';}b.addEventListener('click',on);v.addEventListener('click',function(){if(v.muted)on();});})();</script></body></html>
